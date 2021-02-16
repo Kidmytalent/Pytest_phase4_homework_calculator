@@ -1,0 +1,164 @@
+{
+  "uid" : "199fffb3734a6151",
+  "name" : "test_sub[failed]",
+  "fullName" : "test_calc.TestCalc#test_sub",
+  "historyId" : "db577bc7562ecba25296c840e120d7eb",
+  "time" : {
+    "start" : 1613458855262,
+    "stop" : 1613458855262,
+    "duration" : 0
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 2.5 == 1.5\n  +2.5\n  -1.5",
+  "statusTrace" : "self = <pytest_phase4_homework_calc.testing.test_calc.TestCalc object at 0x0000013537D11CD0>\nget_calc = <pytest_cal.cal.Calculator object at 0x0000013537CADE80>, get_sub_datas = [2, -0.5, 1.5]\n\n    @pytest.mark.second  # 执行减法计算顺序为第二个\n    @allure.story(\"测试减法\")\n    @pytest.mark.sub\n    def test_sub(self, get_calc, get_sub_datas):\n        with allure.step(\"计算两个数相减\"):\n            result = get_calc.sub(get_sub_datas[0], get_sub_datas[1])\n        if isinstance(result, float):\n            result = round(result, 2)\n>       assert result == get_sub_datas[2]\nE       assert 2.5 == 1.5\nE         +2.5\nE         -1.5\n\ntest_calc.py:40: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "get_sub_datas",
+    "time" : {
+      "start" : 1613458855261,
+      "stop" : 1613458855261,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_calc",
+    "time" : {
+      "start" : 1613458854969,
+      "stop" : 1613458854969,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 2.5 == 1.5\n  +2.5\n  -1.5",
+    "statusTrace" : "self = <pytest_phase4_homework_calc.testing.test_calc.TestCalc object at 0x0000013537D11CD0>\nget_calc = <pytest_cal.cal.Calculator object at 0x0000013537CADE80>, get_sub_datas = [2, -0.5, 1.5]\n\n    @pytest.mark.second  # 执行减法计算顺序为第二个\n    @allure.story(\"测试减法\")\n    @pytest.mark.sub\n    def test_sub(self, get_calc, get_sub_datas):\n        with allure.step(\"计算两个数相减\"):\n            result = get_calc.sub(get_sub_datas[0], get_sub_datas[1])\n        if isinstance(result, float):\n            result = round(result, 2)\n>       assert result == get_sub_datas[2]\nE       assert 2.5 == 1.5\nE         +2.5\nE         -1.5\n\ntest_calc.py:40: AssertionError",
+    "steps" : [ {
+      "name" : "计算两个数相减",
+      "time" : {
+        "start" : 1613458855262,
+        "stop" : 1613458855262,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "get_sub_datas::0",
+    "time" : {
+      "start" : 1613458855269,
+      "stop" : 1613458855269,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "get_calc::0",
+    "time" : {
+      "start" : 1613458855339,
+      "stop" : 1613458855339,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "测试减法"
+  }, {
+    "name" : "feature",
+    "value" : "测试计算器"
+  }, {
+    "name" : "tag",
+    "value" : "sub"
+  }, {
+    "name" : "tag",
+    "value" : "second"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "suite",
+    "value" : "test_calc"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCalc"
+  }, {
+    "name" : "host",
+    "value" : "SD-20200502VJES"
+  }, {
+    "name" : "thread",
+    "value" : "12528-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_calc"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_sub_datas",
+    "value" : "[2, -0.5, 1.5]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "sub", "run(order=1)", "second" ]
+  },
+  "source" : "199fffb3734a6151.json",
+  "parameterValues" : [ "[2, -0.5, 1.5]" ]
+}
